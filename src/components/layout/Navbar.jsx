@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import { Phone, ChevronRight, Menu, X, ArrowRight } from "lucide-react";
+import { Phone, ChevronRight, Menu, X, ArrowRight, Smartphone } from "lucide-react";
 import { useState, useEffect } from "react";
 import Container from "./Container";
 
@@ -8,6 +8,7 @@ const navLinks = [
   { name: "Product", path: "/product" },
   { name: "Pricing", path: "/pricing" },
   { name: "About", path: "/about" },
+  { name: "Download", path: "/download" },
 ];
 
 export default function Navbar() {
@@ -104,6 +105,14 @@ export default function Navbar() {
             <hr className="border-white/5" />
             <button className="w-full py-4 rounded-xl border border-white/10 font-bold text-white">Log In</button>
             <button className="w-full py-4 rounded-xl bg-primary-500 font-bold text-white shadow-glow">Get Started</button>
+            <a 
+              href="/downloads/mastercall.apk" 
+              download="mastercall.apk"
+              className="w-full py-4 rounded-xl bg-white/5 border border-white/10 font-bold text-white flex items-center justify-center gap-2"
+            >
+              <Smartphone size={18} className="text-primary-500" />
+              Download Android App
+            </a>
           </div>
         </motion.div>
       )}

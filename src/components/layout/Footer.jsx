@@ -9,6 +9,7 @@ const footerLinks = [
          { name: "Features", path: "/#features" },
          { name: "Workflow", path: "/#workflow" },
          { name: "Pricing", path: "/pricing" },
+         { name: "Download App", path: "/download" },
          { name: "Demo", path: "/demo" },
       ]
    },

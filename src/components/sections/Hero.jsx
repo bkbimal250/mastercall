@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Sparkles } from "lucide-react";
+import { ArrowRight, Play, Sparkles, Download } from "lucide-react";
 import Container from "../layout/Container";
 
 export default function Hero() {
@@ -52,11 +52,18 @@ export default function Hero() {
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </button>
 
-          <button className="px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-2xl font-bold text-lg flex items-center gap-3 transition-all active:scale-95 leading-none">
-            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-                <Play size={16} fill="white" className="ml-1" />
-            </div>
-            Watch Product Tour
+          <a 
+            href="/downloads/mastercall.apk" 
+            download="mastercall.apk"
+            className="px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-2xl font-bold text-lg flex items-center gap-3 transition-all hover:scale-105 active:scale-95 leading-none"
+          >
+            <Download size={22} className="text-primary-500" />
+            Download App
+          </a>
+
+          <button className="px-8 py-4 text-neutral-400 hover:text-white font-bold text-lg flex items-center gap-3 transition-all active:scale-95 leading-none">
+            <Play size={16} fill="currentColor" className="ml-1" />
+            Watch Tour
           </button>
         </motion.div>
 

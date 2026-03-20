@@ -8,6 +8,7 @@ import Terms from "../pages/Terms";
 import HelpCenter from "../pages/HelpCenter";
 import Contact from "../pages/Contact";
 import APIDocs from "../pages/APIDocs";
+import DownloadPage from "../pages/Download";
 import NotFound from "../pages/NotFound";
 import Layout from "../components/layout/Layout";
 
@@ -25,6 +26,7 @@ export default function AppRoutes() {
           <Route path="/help" element={<HelpCenter />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/docs" element={<APIDocs />} />
+          <Route path="/download" element={<DownloadPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
