@@ -48,7 +48,7 @@ export default function Hero() {
           className="mt-12 flex flex-col md:flex-row justify-center items-center gap-6"
         >
           <button className="px-8 py-4 bg-primary-500 text-white rounded-2xl shadow-glow font-bold text-lg flex items-center gap-3 group transition-all hover:scale-105 active:scale-95 leading-none">
-            Get MasterCall Free
+            Enterprise Request
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </button>
 

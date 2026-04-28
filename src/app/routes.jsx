@@ -10,6 +10,7 @@ import Contact from "../pages/Contact";
 import APIDocs from "../pages/APIDocs";
 import DownloadPage from "../pages/Download";
 import NotFound from "../pages/NotFound";
+import DataSafety from "../pages/DataSafety";
 import Layout from "../components/layout/Layout";
 
 export default function AppRoutes() {
@@ -27,6 +28,7 @@ export default function AppRoutes() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/docs" element={<APIDocs />} />
           <Route path="/download" element={<DownloadPage />} />
+          <Route path="/data-safety" element={<DataSafety />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

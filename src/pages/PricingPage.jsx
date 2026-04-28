@@ -6,20 +6,20 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Do you offer a free trial?",
-    answer: "Yes! We offer a 14-day free trial on our Starter and Professional plans. No credit card is required to start your trial."
+    question: "Is MasterCall available for the public?",
+    answer: "No. MasterCall is a private enterprise solution designed exclusively for authorized spa and salon branches within our organization."
   },
   {
-    question: "How does the per-user pricing work?",
-    answer: "Each team member you add to your workspace counts as one user. You can add or remove users at any time and your bill will be prorated automatically."
+    question: "How do I get an access token?",
+    answer: "Registration tokens are issued directly by the central CRM administrator to verified branch devices. Please contact your regional IT manager for token generation."
   },
   {
-    question: "Can I upgrade or downgrade my plan?",
-    answer: "Absolutely. You can change your plan at any time from your account settings. Changes will be reflected in your next billing cycle."
+    question: "What is the per-branch pricing?",
+    answer: "Our solution is licensed on a per-organization basis. Individual branches do not need to pay separately as the infrastructure is managed centrally."
   },
   {
-    question: "What kind of support is included?",
-    answer: "All plans include 24/7 email support. Professional and Enterprise plans also include priority support via phone and dedicated account management."
+    question: "What kind of support is provided?",
+    answer: "We provide dedicated 24/7 IT helpdesk support for all authorized branches to ensure continuous call tracking and synchronization."
   }
 ];
 
@@ -35,7 +35,7 @@ export default function PricingPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight"
           >
-            Pricing <span className="text-primary-500">Built for Growth</span>
+            Enterprise <span className="text-primary-500">Infrastructure</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export default function PricingPage() {
             transition={{ delay: 0.1 }}
             className="text-neutral-400 text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Simple, transparent pricing for teams of all sizes. No hidden fees, ever.
+            Private licensing and unified management for our organization's distributed branch networks.
           </motion.p>
         </div>
       </Container>

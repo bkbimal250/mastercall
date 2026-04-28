@@ -24,16 +24,16 @@ export default function CTA() {
           </h2>
           
           <p className="mt-8 text-indigo-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Join 500+ businesses using MasterCall to track their teams and optimize sales. 
-            Get started today and see the results in real-time.
+            Authorized branches only. MasterCall provides end-to-end call tracking and 
+            lead management for our organization's distributed networks.
           </p>
 
           <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-8">
              <button className="px-10 py-5 bg-white text-indigo-600 rounded-2xl font-black text-lg shadow-2xl hover:bg-neutral-50 transition-all hover:scale-105 active:scale-95 leading-none shadow-glow-white">
-                Start Free Trial
+                Contact Admin for Token
              </button>
              <div className="flex flex-col items-start gap-4">
-                {["No credit card required", "Free 14-day trial", "Cancel anytime"].map((t, i) => (
+                {["Enterprise Grade Security", "Internal Organizational Tool", "Compliance Ready"].map((t, i) => (
                   <div key={i} className="flex items-center gap-2 text-indigo-100 font-medium">
                      <CheckCircle2 size={18} className="text-white" />
                      {t}

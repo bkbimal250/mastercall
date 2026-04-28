@@ -69,11 +69,21 @@ export default function DownloadPage() {
                   With You Everywhere
                 </span>
               </h1>
-              <p className="text-neutral-400 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+              <p className="text-neutral-400 text-lg md:text-xl leading-relaxed mb-6 max-w-xl">
                 Download our professional Android application to manage your call 
                 operations, track leads, and monitor branch performance directly 
                 from your smartphone.
               </p>
+              <div className="p-4 bg-amber-500/10 border border-amber-500/20 rounded-xl mb-10 max-w-xl">
+                <p className="text-amber-500 text-sm font-bold flex items-center gap-2">
+                  <Shield size={16} />
+                  Authorized Personnel Only
+                </p>
+                <p className="text-neutral-400 text-xs mt-1">
+                  This app requires a secure registration token issued from our internal CRM. 
+                  Without verified credentials, the application remains locked.
+                </p>
+              </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <button
@@ -142,20 +152,20 @@ export default function DownloadPage() {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
               <div>
-                <div className="text-4xl font-black text-white mb-2 leading-none">50K+</div>
-                <div className="text-sm font-bold text-neutral-500 uppercase tracking-widest leading-none">Downloads</div>
+                <div className="text-4xl font-black text-white mb-2 leading-none">100+</div>
+                <div className="text-sm font-bold text-neutral-500 uppercase tracking-widest leading-none">Branches</div>
               </div>
               <div>
-                <div className="text-4xl font-black text-white mb-2 leading-none">4.9/5</div>
-                <div className="text-sm font-bold text-neutral-500 uppercase tracking-widest leading-none">User Rating</div>
+                <div className="text-4xl font-black text-white mb-2 leading-none">Enterprise</div>
+                <div className="text-sm font-bold text-neutral-500 uppercase tracking-widest leading-none">Security</div>
               </div>
               <div>
-                <div className="text-4xl font-black text-white mb-2 leading-none">0.01%</div>
-                <div className="text-sm font-bold text-neutral-500 uppercase tracking-widest leading-none">Crash Rate</div>
+                <div className="text-4xl font-black text-white mb-2 leading-none">99.9%</div>
+                <div className="text-sm font-bold text-neutral-500 uppercase tracking-widest leading-none">Uptime</div>
               </div>
               <div>
-                <div className="text-4xl font-black text-white mb-2 leading-none">24/7</div>
-                <div className="text-sm font-bold text-neutral-500 uppercase tracking-widest leading-none">Live Support</div>
+                <div className="text-4xl font-black text-white mb-2 leading-none">IT</div>
+                <div className="text-sm font-bold text-neutral-500 uppercase tracking-widest leading-none">Desk Support</div>
               </div>
             </div>
           </motion.div>

@@ -1,57 +1,54 @@
 import { motion } from "framer-motion";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Shield, Globe, Lock } from "lucide-react";
 import Container from "../layout/Container";
-import { useState } from "react";
 
-const plans = [
+const tiers = [
     {
-        name: "Starter",
-        price: 999,
-        description: "Perfect for small teams or solo entrepreneurs.",
+        name: "Standard Branch",
+        icon: <Globe className="text-primary-500" size={24} />,
+        description: "Core tracking for standard spa/salon outlets.",
         features: [
-            "1,000 Call Logs",
-            "Basic Analytics",
-            "3 Team Members",
-            "Email Support",
-            "CSV Export",
+            "Real-time Call Logging",
+            "Lead Sync to CRM",
+            "Branch Dashboard Access",
+            "IT Helpdesk Support",
+            "Encrypted Data Sync",
         ],
-        cta: "Start Free Trial",
+        cta: "Request Branch Setup",
         popular: false,
     },
     {
-        name: "Professional",
-        price: 2999,
-        description: "Scale your operations with advanced tracking.",
+        name: "Premium Branch",
+        icon: <Shield className="text-indigo-400" size={24} />,
+        description: "Enhanced monitoring for high-volume centers.",
         features: [
-            "Unlimited Call Logs",
-            "Advanced Dashboard",
-            "10 Team Members",
-            "Priority Support",
-            "API Access",
-            "Custom Integration",
+            "Unlimited Call History",
+            "Priority IT Support",
+            "Custom Analytics Reports",
+            "Team Performance Tracking",
+            "Advanced API Integration",
+            "Local Backup Storage",
         ],
-        cta: "Get Started Now",
+        cta: "Request Upgrade",
         popular: true,
     },
     {
-        name: "Enterprise",
-        price: "Custom",
-        description: "Tailored solutions for large-scale operations.",
+        name: "Corporate Admin",
+        icon: <Lock className="text-emerald-400" size={24} />,
+        description: "Full oversight for regional management.",
         features: [
-            "Multiple Branches",
-            "Custom Branding",
-            "Unlimited Members",
-            "Dedicated Account Manager",
-            "SSO/SAML support",
+            "Multi-Branch View",
+            "Organization-wide Stats",
+            "User Access Management",
+            "Compliance Monitoring",
+            "Custom Security Policy",
         ],
-        cta: "Contact Sales",
+        cta: "Admin Console Access",
         popular: false,
     },
 ];
 
 export default function Pricing() {
-    const [isYearly, setIsYearly] = useState(false);
-
     return (
         <section className="py-24 bg-background-secondary relative">
             <Container>
@@ -63,7 +60,7 @@ export default function Pricing() {
                         viewport={{ once: true }}
                         className="text-4xl md:text-5xl font-bold"
                     >
-                        Plans for Every Stage
+                        Infrastructure Deployment
                     </motion.h2>
 
                     <motion.p
@@ -73,41 +70,14 @@ export default function Pricing() {
                         transition={{ delay: 0.1 }}
                         className="text-neutral-400 mt-4 max-w-xl mx-auto"
                     >
-                        Choose the plan that fits your business needs. Upgrade or downgrade anytime.
+                        MasterCall is deployed based on branch requirements and regional scale. 
+                        Access is managed through internal corporate protocols.
                     </motion.p>
-
-                    {/* Toggle */}
-                    <div className="mt-8 flex items-center justify-center gap-4">
-                        <span className={!isYearly ? "text-white" : "text-neutral-400"}>
-                            Monthly
-                        </span>
-
-                        <div
-                            className="w-12 h-6 bg-background-tertiary rounded-full p-1 cursor-pointer flex items-center border border-white/5"
-                            onClick={() => setIsYearly(!isYearly)}
-                        >
-                            <motion.div
-                                animate={{ x: isYearly ? 24 : 0 }}
-                                className="w-4 h-4 bg-primary-500 rounded-full"
-                            />
-                        </div>
-
-                        <span className={isYearly ? "text-white" : "text-neutral-400"}>
-                            Yearly (Save 20%)
-                        </span>
-                    </div>
                 </div>
 
                 {/* Cards */}
                 <div className="grid md:grid-cols-3 gap-8">
-                    {plans.map((plan, i) => {
-                        const finalPrice =
-                            plan.price === "Custom"
-                                ? "Custom"
-                                : isYearly
-                                    ? Math.floor(plan.price * 0.8)
-                                    : plan.price;
-
+                    {tiers.map((tier, i) => {
                         return (
                             <motion.div
                                 key={i}
@@ -115,42 +85,28 @@ export default function Pricing() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
-                                className={`p-8 rounded-2xl border ${plan.popular
+                                className={`p-8 rounded-2xl border ${tier.popular
                                     ? "border-primary-500 bg-primary-500/5 relative"
                                     : "border-white/5 bg-background-tertiary shadow-card"
                                     } hover:scale-105 transition`}
                             >
                                 {/* Badge */}
-                                {plan.popular && (
+                                {tier.popular && (
                                     <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-primary-500 text-white rounded-full text-xs font-bold">
-                                        Most Popular
+                                        Priority Setup
                                     </div>
                                 )}
 
-                                {/* Title */}
-                                <h3 className="text-xl font-bold">{plan.name}</h3>
+                                {/* Icon & Title */}
+                                <div className="mb-4">{tier.icon}</div>
+                                <h3 className="text-xl font-bold">{tier.name}</h3>
                                 <p className="text-neutral-400 text-sm mt-2">
-                                    {plan.description}
+                                    {tier.description}
                                 </p>
-
-                                {/* Price */}
-                                <div className="mt-6 flex items-baseline gap-1">
-                                    <span className="text-4xl font-bold">
-                                        {plan.price === "Custom"
-                                            ? finalPrice
-                                            : `₹${finalPrice.toLocaleString("en-IN")}`}
-                                    </span>
-
-                                    {plan.price !== "Custom" && (
-                                        <span className="text-neutral-400 text-sm">
-                                            /{isYearly ? "year" : "month"}
-                                        </span>
-                                    )}
-                                </div>
 
                                 {/* Features */}
                                 <ul className="mt-8 space-y-4">
-                                    {plan.features.map((feature, idx) => (
+                                    {tier.features.map((feature, idx) => (
                                         <li
                                             key={idx}
                                             className="flex items-center gap-3 text-sm text-neutral-300"
@@ -163,12 +119,12 @@ export default function Pricing() {
 
                                 {/* Button */}
                                 <button
-                                    className={`w-full mt-10 px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 group ${plan.popular
+                                    className={`w-full mt-10 px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 group ${tier.popular
                                         ? "bg-primary-500 text-white shadow-glow"
                                         : "bg-white/5 hover:bg-white/10"
                                         }`}
                                 >
-                                    {plan.cta}
+                                    {tier.cta}
                                     <ArrowRight
                                         size={18}
                                         className="group-hover:translate-x-1 transition"
