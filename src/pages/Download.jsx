@@ -70,9 +70,9 @@ export default function DownloadPage() {
                 </span>
               </h1>
               <p className="text-neutral-400 text-lg md:text-xl leading-relaxed mb-6 max-w-xl">
-                Download our professional Android application to manage your call 
-                operations, track leads, and monitor branch performance directly 
-                from your smartphone.
+                Download the MasterCall infrastructure client for <strong>dedicated branch phones</strong>. 
+                Monitor business call history across your 500+ spa locations and manage 
+                receptionist-attended leads in real-time.
               </p>
               <div className="p-4 bg-amber-500/10 border border-amber-500/20 rounded-xl mb-10 max-w-xl">
                 <p className="text-amber-500 text-sm font-bold flex items-center gap-2">
@@ -80,8 +80,7 @@ export default function DownloadPage() {
                   Authorized Personnel Only
                 </p>
                 <p className="text-neutral-400 text-xs mt-1">
-                  This app requires a secure registration token issued from our internal CRM. 
-                  Without verified credentials, the application remains locked.
+                  This app is for <strong>company-owned branch devices ONLY</strong>. It must not be installed on personal employee phones. Access requires a secure registration token issued from our internal CRM for each spa branch device.
                 </p>
               </div>
 

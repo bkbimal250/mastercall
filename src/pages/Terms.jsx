@@ -69,7 +69,7 @@ export default function Terms() {
                 4. Liability Disclaimer
               </h2>
               <p className="mb-4 leading-relaxed">
-                MasterCall is provided "as is" for internal operational purposes. While we strive for 100% uptime and accurate data synchronization, the organization assumes no liability for technical failures, missed logs due to connectivity issues, or device malfunctions. 
+                MasterCall is provided "as is" for internal operational purposes. While we strive for 100% uptime and accurate data synchronization, the organization assumes no liability for technical failures, missed logs due to connectivity issues, or device malfunctions.
               </p>
               <p className="leading-relaxed">
                 Users must ensure devices are connected to the internet periodically to allow for proper data synchronization to the CRM.
@@ -83,8 +83,8 @@ export default function Terms() {
               <p className="mb-4 leading-relaxed">
                 For technical support or to report a violation of these terms, please contact:
               </p>
-              <a href="mailto:support@mastercall.in" className="text-primary-400 hover:text-primary-300 font-medium">
-                support@mastercall.in
+              <a href="mailto:email-us@dishaonlinesolution.in" className="text-primary-400 hover:text-primary-300 font-medium">
+                email-us@dishaonlinesolution.in
               </a>
             </section>
           </div>

@@ -22,7 +22,7 @@ export default function DataSafety() {
             </div>
             <h1 className="text-4xl md:text-6xl font-black text-white mb-6">Data Safety Overview</h1>
             <p className="text-neutral-400 text-lg md:text-xl max-w-2xl mx-auto">
-              Transparency regarding how we handle data on company-approved devices using the MasterCall enterprise system.
+              Transparency regarding how we handle data on <strong>company-owned branch devices</strong>. MasterCall is exclusively installed on receptionist and lead generation phones at our 500+ spa locations.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function DataSafety() {
                 </p>
                 <div className="mt-6 pt-6 border-t border-white/10">
                   <p className="text-sm text-neutral-400">
-                    Questions about our data handling? Contact our compliance team at <a href="mailto:support@mastercall.in" className="text-white font-medium hover:underline">support@mastercall.in</a>.
+                    Questions about our data handling? Contact our compliance team at <a href="mailto:email-us@dishaonlinesolution.in" className="text-white font-medium hover:underline">email-us@dishaonlinesolution.in</a>.
                   </p>
                 </div>
               </div>

@@ -32,8 +32,8 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Email Support</h3>
               <p className="text-neutral-400 mb-4">Average response time: 2 hours</p>
-              <a href="mailto:support@mastercall.in" className="text-primary-400 font-bold text-lg hover:text-primary-300">
-                support@mastercall.in
+              <a href="mailto:email-us@dishaonlinesolution.in" className="text-primary-400 font-bold text-lg hover:text-primary-300">
+                email-us@dishaonlinesolution.in
               </a>
             </div>
 
@@ -66,8 +66,8 @@ export default function Contact() {
               <p className="text-neutral-400 mb-8">
                 If your device is failing to sync calls to the CRM, please email support with your Branch ID and Device Serial Number to expedite troubleshooting.
               </p>
-              <a 
-                href="mailto:support@mastercall.in?subject=MasterCall Issue - [Branch Name]"
+              <a
+                href="mailto:email-us@dishaonlinesolution.in?subject=MasterCall Issue - [Branch Name]"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 text-white rounded-xl font-bold hover:bg-primary-600 transition-colors"
               >
                 <Mail size={20} />
