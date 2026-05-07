@@ -1,0 +1,50 @@
+{
+  "appName": "MasterCall",
+  "lastUpdated": "2026-05-07",
+  "appCategory": "Enterprise Business Communication Platform",
+  "description": "MasterCall is an enterprise business communication and CRM synchronization platform with optional default business dialer functionality for authorized organizations.",
+  "features": [
+    "Business communication",
+    "CRM synchronization",
+    "Incoming and outgoing business call handling",
+    "Optional default business dialer",
+    "Lead management",
+    "Business call analytics"
+  ],
+  "permissions": {
+    "allowed": [
+      "READ_CALL_LOG",
+      "WRITE_CALL_LOG",
+      "READ_PHONE_STATE",
+      "CALL_PHONE"
+    ],
+    "notUsed": [
+      "READ_SMS",
+      "SEND_SMS",
+      "RECEIVE_SMS"
+    ]
+  },
+  "privacy": {
+    "collectsCallLogs": true,
+    "collectsSms": false,
+    "hiddenMonitoring": false,
+    "spywareBehavior": false,
+    "backgroundSurveillance": false,
+    "callRecording": false
+  },
+  "defaultDialer": {
+    "supported": true,
+    "optional": true,
+    "requiresUserConsent": true,
+    "removableAnytime": true
+  },
+  "security": {
+    "encryption": "HTTPS/TLS",
+    "thirdPartySharing": false,
+    "advertisingId": false
+  },
+  "contact": {
+    "email": "email-us@dishaonlinesolution.in",
+    "website": "https://mastercall.in"
+  }
+}
